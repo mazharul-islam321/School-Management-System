@@ -1,12 +1,14 @@
 from django.shortcuts import render
-
-
-
+from .models import Post
 
 
 
 def index(request):
-  return render(request, 'index.html', {})
+  post = Post.objects.all()
+  context = {
+    'object_list' : post
+  }
+  return render(request, 'index.html', context)
 
 def about(request):
   return render(request, 'about-us.html', {})

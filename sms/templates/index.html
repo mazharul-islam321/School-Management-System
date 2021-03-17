@@ -46,19 +46,18 @@
   <!-- ..........Latest-news....... -->
 
   <div class="container-fluid">
+    {% for obj in  object_list%}
 		<div class="row py-5">
 			<div class="col-md-6 px-0 newa-banner">
-				<img src="{% static 'images/school.jpg' %}" alt="school-field">
+				<img src="{{ obj.image.url }}" alt="school-field">
 			</div>
 			<div class="col-md-6 my-auto business-expert">
-				<h2 class="pb-4">The Largest News</h2>
-				<p class="pb-4">These cases are perfectly simple and easy to distinguish. In a free hour,<br>
-					when our power of choice is untrammelled and when nothing prevents<br>
-					our being able to do what we like best. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illo beatae ducimus earum at dolore dicta quaerat numquam ea! Eaque recusandae sequi expedita at quam assumenda temporibus eius officia quas.
-				</p>
+				<h2 class="pb-4">{{ obj.title }}</h2>
+				<p class="pb-4">{{ obj.description }}</p>
         <a class="some-text" href="#">Read More...</a>
 			</div>
 		</div>
+    {% endfor %}
 	</div>
 
   <!-- school-location & contact -->
