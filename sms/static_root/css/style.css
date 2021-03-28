@@ -1,0 +1,112 @@
+/* .........main header....... */
+.header{
+  background-color: #455a64;
+  height: 150px;
+  border-bottom: 1px solid #024a5c;
+}
+.header img{
+  height: 120PX;
+  width: 120PX;
+  border-radius: 50%;
+}
+.header h1{
+  color: white;
+  font-size: 50px;
+}
+.header a{
+  text-decoration: none;
+}
+.header .hight{
+  height: 100%;
+}
+/* ...........nabver...............  */
+.navber-header{
+  background-color: #455a64;
+}
+.navber-header li{
+  padding: 8px;
+}
+.navber-header a{
+  color: rgb(233, 227, 227);
+} 
+.dropdown-list{
+  padding: 0 0;
+  margin: .360rem 0 0;
+}
+.dropdown-list a{
+  background-color: #455a64;
+
+}
+/* .......banner-slide............. */
+.slide-margin{
+  padding-right: 0; 
+  padding-left: 0;
+}
+.asd{
+	width: 100%;
+	height: 85vh;
+}
+/* ..........Latest-news....... */
+.business-expert h2{
+	font-size: 35px;
+}
+.business-expert button{
+	width: 150px;
+}
+@media screen and (max-width: 900px){
+	.business-expert h2{
+		font-size: 30px;
+		padding-top: 10px;
+	}
+	.business-expert button{
+		margin-bottom: 15px;
+	}
+}
+.newa-banner img{
+  width: 100%;
+  height:400px;
+}
+/* ..............google map............ */
+.map-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.formedit div{
+  padding: 4px;
+
+}
+.formedit input{
+  height: 45px;
+}
+.headerr{
+  background-color: #455a64;
+  height: 170px;
+}
+.headerr img{
+  width: 110px;
+  height: 110px;
+  border-radius: 20%;
+}
+.headerr h2{
+  color: whitesmoke;
+}
+
+/* .......about-us-image-size........... */
+
+.image-size{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 5px 0;
+}
+.image-info{
+  padding-top: 10px;
+}
+
+/* .........notice-board-hight......... */
+
+.page-hight{
+  height: 500px;
+}
