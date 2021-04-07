@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Post
 
 
@@ -24,3 +24,12 @@ def result(request):
 
 def routine(request):
   return render(request, 'class-routine.html', {})
+
+
+def post(request, id):
+  post = get_object_or_404(Post, id=id) 
+  context = {
+    'post' : post
+  }
+  return render(request, 'post.html', context)
+ 

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+    <div class="container">
+        <div class="row py-4">
+            <div class="px-0 newa-banner">
+                <img src="{{ post.image.url }}" alt="school-field">
+            </div>
+            <div class="my-auto business-expert text-center">
+                <h2 class="pb-4">{{ post.title }}</h2>
+                <p class="pb-4">{{ post.description }}</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

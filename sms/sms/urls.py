@@ -2,7 +2,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
-from post.views import index, about, admission, notice, result, routine
+from post.views import index, about, admission, notice, result, routine, post
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -12,6 +12,8 @@ urlpatterns = [
     path('notice/', notice),
     path('result/', result),
     path('routine/', routine),
+    path('post/<id>/', post, name='post-detail'),
+
 ]
 
 if settings.DEBUG:

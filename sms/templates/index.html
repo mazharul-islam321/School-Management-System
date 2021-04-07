@@ -45,16 +45,16 @@
 
   <!-- ..........Latest-news....... -->
 
-  <div class="container-fluid">
+  <div class="container">
     {% for obj in  object_list%}
-		<div class="row py-5">
+		<div class="row py-4">
 			<div class="col-md-6 px-0 newa-banner">
 				<img src="{{ obj.image.url }}" alt="school-field">
 			</div>
 			<div class="col-md-6 my-auto business-expert">
 				<h2 class="pb-4">{{ obj.title }}</h2>
 				<p class="pb-4">{{ obj.description }}</p>
-        <a class="some-text" href="#">Read More...</a>
+        <a class="some-text" href="{{ obj.get_absolute_url }}">Read More...</a>
 			</div>
 		</div>
     {% endfor %}
